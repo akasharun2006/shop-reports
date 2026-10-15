@@ -1,4 +1,3 @@
-
 import products from "./data/products.js";
 
 import {
@@ -20,7 +19,8 @@ const cart = [
 
 console.log("Report Date:", formatDate());
 
-console.log("Low Stock:", lowStock(products));
+console.log("Low Stock:");
+console.table(lowStock(products));
 
 console.log("Price List:");
 console.table(priceList(products));
@@ -29,6 +29,5 @@ console.log("Value by Category:", valueByCategory(products));
 
 console.log("Cart Total:", formatPrice(cartTotal(products, cart)));
 
-console.log("Decor Sale:", applySale(products, "decor", 10));
-
-console.log("Formatted Price Example:", formatPrice(45000));
+console.log("Decor Sale:");
+console.table(applySale(products, "decor", 10));
